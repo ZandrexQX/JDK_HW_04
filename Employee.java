@@ -12,4 +12,30 @@ public class Employee {
         this.name = name;
         this.experience = experience;
     }
+
+    public int getTabel() {
+        return tabel;
+    }
+
+    public int getTelNumber() {
+        return telNumber;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getExperience() {
+        return experience;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "tabel=" + tabel +
+                ", telephone=" + telNumber +
+                ", name='" + name + '\'' +
+                ", experience=" + experience +
+                '}';
+    }
 }
