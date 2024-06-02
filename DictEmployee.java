@@ -23,7 +23,7 @@ public class DictEmployee {
         ArrayList<Integer> listNumber = new ArrayList<>();
         if (arrEmployee != null) {
             for (Employee employee : arrEmployee) {
-                if (employee.getName() == name) listNumber.add(employee.getTelNumber());
+                if (employee.getName().equals(name)) listNumber.add(employee.getTelNumber());
             }
         }
         return listNumber;
@@ -36,5 +36,9 @@ public class DictEmployee {
             }
         }
         return null;
+    }
+
+    public ArrayList<Employee> getArrEmployee() {
+        return arrEmployee;
     }
 }
