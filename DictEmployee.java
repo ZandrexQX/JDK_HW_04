@@ -18,4 +18,23 @@ public class DictEmployee {
         }
         return arrExp;
     }
+
+    public ArrayList<Integer> searchNumber(String name){
+        ArrayList<Integer> listNumber = new ArrayList<>();
+        if (arrEmployee != null) {
+            for (Employee employee : arrEmployee) {
+                if (employee.getName() == name) listNumber.add(employee.getTelNumber());
+            }
+        }
+        return listNumber;
+    }
+
+    public Employee findTabel(int tabel){
+        if (arrEmployee != null) {
+            for (Employee employee : arrEmployee) {
+                if (employee.getTabel() == tabel) return employee;
+            }
+        }
+        return null;
+    }
 }

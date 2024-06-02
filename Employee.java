@@ -1,13 +1,13 @@
 package homework04;
 
 public class Employee {
-    private int tabel;
+    private int tabel = 0;
     private int telNumber;
     private String name;
     private int experience;
 
-    public Employee(int tabel, int telNumber, String name, int experience) {
-        this.tabel = tabel;
+    public Employee(int telNumber, String name, int experience) {
+        this.tabel += 1;
         this.telNumber = telNumber;
         this.name = name;
         this.experience = experience;
